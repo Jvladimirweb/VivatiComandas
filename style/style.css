@@ -1,0 +1,283 @@
+/* Estilo Global */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Estilo para a imagem de login */
+.login-image {
+    max-width: 50%; /* Garante que a imagem nunca ultrapasse a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Centraliza a imagem em seu contêiner */
+    margin: 20px auto; /* Adiciona espaçamento em volta da imagem */
+    border-radius: 15px; /* Bordas arredondadas para um visual mais moderno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve para destaque */
+    border: 2px solid #007BFF; /* Adiciona uma borda fina com cor */
+    transition: transform 0.3s ease-in-out; /* Animação ao passar o mouse */
+}
+
+/* Animação ao passar o mouse */
+.login-image:hover {
+    transform: scale(1.05); /* Leve aumento no tamanho */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta a intensidade da sombra */
+    border-color: #0056b3; /* Escurece a borda */
+}
+
+
+h1, h2 {
+    color: #333;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Estilo para links como botões */
+.butt {
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    background-color: #007BFF;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.butt:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.button:active {
+    transform: scale(0.98);
+}
+
+/* Botões */
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    background-color: #004494;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+/* Tabelas */
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 50px 0;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    font-size: 25px;
+}
+
+table th {
+    background-color: #28a745;
+    color: white;
+    font-weight: bold;
+}
+
+table tr:last-child td {
+    border:black;
+}
+
+table tfoot th {
+    background-color: #28a745;
+    color: white;
+    text-align: right;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Formulários */
+form {
+    width: 50%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 25px 0;
+}
+
+form label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 25px;
+    color: #333333;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="select"],
+form input[type="number"],
+form button {
+    width: 50%;
+    padding: 12px;
+    margin-bottom: 15px;
+    margin-left: 14%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 25px;
+    box-sizing: border-box;
+}
+
+form input[type="text"]:focus,
+form input[type="password"]:focus,
+form input[type="select"]:focus,
+form input[type="number"]:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+form button {
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    width: 150px;
+}
+
+form button:hover {
+    background-color: #218838;
+}
+
+form div {
+    display: block;
+}
+
+form div select {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 25px 0;
+    font-size: 25px;
+}
+
+/* Mensagens */
+.message {
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.message.success {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+}
+
+.message.error {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+}
+
+/* Navegação estilo app */
+.navbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #007BFF;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+    color: white;
+    font-size: 14px;
+    text-align: center;
+}
+
+.navbar a:hover {
+    text-decoration: none;
+    color: #e0e0e0;
+}
+
+.navbar a span {
+    display: block;
+    font-size: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1, h2 {
+        font-size: 1.2em;
+    }
+
+    table th, table td {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    button, a.butt {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    form input[type="text"],
+    form input[type="password"],
+    form input[type="number"],
+    form input[type="select"],
+    form button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
